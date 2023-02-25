@@ -1,5 +1,7 @@
 <template>
   <div>
-    <NuxtWelcome />
+    <v-btn>
+      Hello world!
+    </v-btn>
   </div>
 </template>
