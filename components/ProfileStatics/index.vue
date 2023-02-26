@@ -1,7 +1,22 @@
 <template>
     <div class="ProfileStatics">
-        <div class="ProfileStatics__ProfileInfo">hola</div>
-        <div class="ProfileStatics__Statics">hola</div>
+        <div class="ProfileInfo">
+            <div class="ProfileInfo__Container">
+                <div class="ProfileInfo__Image">
+                    <img src="" alt="">
+                    <div class="ProfileInfo__NotificationDot"/>
+                </div>
+                <div class="ProfileInfo__Description">
+                    <div class="ProfileInfo__Description__Name">Carlos Catalan</div>
+                    <div class="ProfileInfo__Description__Rol">Fullstack Developer</div>
+                </div>
+            </div>
+        </div>
+        <div class="Statics">
+            <div class="Statics__Title">My Statics</div>
+            <div class="Statics__Progress"></div>
+            <div class="Statics__TasksInfo"></div>
+        </div>
     </div>
 </template>
 
@@ -16,10 +31,20 @@
     border-radius: 0.7rem;
     background-color: white;
   }
-  .ProfileStatics__ProfileInfo{
-    background-color: red;
+  .ProfileInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    /* background-color: red; */
   }
-  .ProfileStatics__Statics{
+  .ProfileInfo__Image{
+    border: 1px solid black;
+    border-radius: 1rem;
+    width: 7rem;
+    height:7rem;
+  }
+  .Statics{
     background-color: blue;
 
   }
