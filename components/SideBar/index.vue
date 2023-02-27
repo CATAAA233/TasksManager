@@ -9,8 +9,10 @@
         <NuxtLink to="/" class="Sidebar__MenuOptions">
             <img src="/img/home.png" alt="">
         </NuxtLink>
-        <div class="Sidebar__ProfileImage">
-            <img src="" alt="">
+        <div class="Sidebar__NewTaskContainer">
+            <NuxtLink to="/newTask" class="Sidebar__NewTaskContainer__Button">
+                    <img src="/img/plus.png" alt="">
+            </NuxtLink>
         </div>
     </div>
 </template>
@@ -60,4 +62,26 @@
     width: 2.5rem;
     height: 2.5rem;
 }
-</style>
+
+.Sidebar__NewTaskContainer {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Sidebar__NewTaskContainer__Button {
+    width: 70%;
+    height: 3.5rem;
+    background-color: #2c55dc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.Sidebar__NewTaskContainer__Button>img {
+    width: 50%;
+    filter: invert(100%);
+}</style>
