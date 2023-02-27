@@ -37,6 +37,7 @@
     flex-direction: column;
     flex-grow: 1;
     row-gap: 4rem;
+    overflow-y: scroll;
 }
 
 </style>

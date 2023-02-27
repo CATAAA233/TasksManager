@@ -42,6 +42,7 @@
                         </div>
                     </div>
                     <div class="Task__Actions">
+                        <button @click="updateTask">Detele task</button>
                         <button @click="updateTask">Update task</button>
                     </div>
                 </div>
@@ -74,6 +75,12 @@ const updateTask = async () => {
         tags: tags.value
     }
     const status = await api.updateTask(taskId, task);
+    if (status === 201) {
+        router.push('/')
+    }
+}
+const deleteTask= async()=>{
+    const status = await api.deleteTask(taskId);
     if (status === 201) {
         router.push('/')
     }
