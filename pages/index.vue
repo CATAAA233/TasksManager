@@ -44,6 +44,7 @@ const visible = ref<boolean>(false);
     flex-direction: column;
     row-gap: 1rem;
     width: 100%;
+    height: min-content;
 }
 
 .Body__TodayTasks__TitleContainer {
@@ -80,6 +81,8 @@ const visible = ref<boolean>(false);
     display: grid;
     grid-template-columns: repeat(2, minmax(200px, 1fr));
     gap: 1rem;
+    overflow: scroll;
+
 }
 
 .ProfileStatics__Container {
@@ -98,4 +101,5 @@ const visible = ref<boolean>(false);
         position: absolute;
     }
 }
+
 </style>

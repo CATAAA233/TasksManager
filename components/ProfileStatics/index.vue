@@ -135,4 +135,12 @@
 .Summary__Amount {
   font-family: IBM-SemiBold;
 
-}</style>
+}
+@media screen and (max-height: 800px) {
+    .ProfileStatics{
+        height: 35rem;
+    }
+    
+}
+
+</style>
