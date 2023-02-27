@@ -84,4 +84,11 @@
 .Sidebar__NewTaskContainer__Button>img {
     width: 50%;
     filter: invert(100%);
-}</style>
+}
+@media screen and (max-height: 800px) {
+    .Sidebar{
+        height: 43rem;
+    }
+    
+}
+</style>

@@ -15,7 +15,6 @@
     background-color: #f1f1f1;
     height: 100vh;
     padding: 3.5rem;
-    overflow: hidden;
   }
   .page-enter-active,
   .page-leave-active {
@@ -29,6 +28,7 @@
   }
     .Page {
         display: flex;
+        height: calc(100vh - 7rem);
         column-gap: 3rem;
     }
 
@@ -38,6 +38,13 @@
     flex-grow: 1;
     row-gap: 4rem;
     overflow-y: scroll;
+}
+
+@media screen and (max-height: 800px) {
+    .Page__Body{
+        height: 43rem;
+    }
+    
 }
 
 </style>
