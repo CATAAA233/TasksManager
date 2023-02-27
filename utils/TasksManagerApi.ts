@@ -30,7 +30,7 @@ export default class TasksManagerApi {
         console.log(`Getting Task with id ${taskId}`);
         try {
             const { data } = await this.axiosInstance.get<TaskModel[]>(`tasks/${taskId}`);
-            return data;
+            return data[0];
         } catch (error) {
             console.log('there was an error getting tasks');
         }

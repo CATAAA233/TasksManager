@@ -1,8 +1,6 @@
 <template>
-    <ButtonBlue/>
+    <div>hola desde about</div>
 </template>
 <style>
-    body{
-        background-color: beige;
-    }
+
 </style>
