@@ -168,4 +168,13 @@ input {
 .SuccessMessage>p {
     color: green;
 }
+@media screen and (max-height: 800px) {
+    .Details__Body{
+        height: 50rem;
+    }
+    .Details__Body__Container{
+        height: 95%;
+    }
+    
+}
 </style>

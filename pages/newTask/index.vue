@@ -88,7 +88,7 @@ const updateTask = async () => {
     height: calc(100vh - 12rem);
     font-family: IBM-Regular;
     border-radius: 1rem;
-
+    
 }
 
 .Details__Body__Container {
@@ -97,6 +97,7 @@ const updateTask = async () => {
     padding: 2rem;
     border-radius: 1rem;
     background-color: white;
+    overflow: scroll;
 }
 
 input {
@@ -166,5 +167,15 @@ input {
 
 .SuccessMessage>p {
     color: green;
+}
+
+@media screen and (max-height: 800px) {
+    .Details__Body{
+        height: 50rem;
+    }
+    .Details__Body__Container{
+        height: 95%;
+    }
+    
 }
 </style>
