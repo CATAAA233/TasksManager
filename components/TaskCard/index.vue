@@ -4,13 +4,14 @@
             {{title}}
         </div>
         <div class="TaskCard__Description">
-            
+            Status: {{ is_Completed ? 'Completed' : 'Not Completed' }}
         </div>
     </div>
 </template>
 <script setup lang="ts">
 const props = defineProps({
     title: String,
+    is_Completed: Boolean,
  })
 
 </script>
@@ -20,7 +21,6 @@ const props = defineProps({
     height: 12rem;
     border-radius: 1rem;
     background: linear-gradient(to right, #fe6867, #ff4141);
-    /* background-color:  #ff4c4e; */
     color: white;
     font-family: EncodeSans-SemiBold;
     font-weight: 600;
@@ -38,5 +38,8 @@ const props = defineProps({
     text-overflow: ellipsis;
     font-size: 1.5rem;
     margin-top: 1.5rem;
+}
+.TaskCard__Description{
+    margin-top: 1rem;
 }
 </style>

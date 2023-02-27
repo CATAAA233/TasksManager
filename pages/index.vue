@@ -12,7 +12,7 @@
             <div v-for=" item in data">
                 <NuxtLink :href="'task/' + item.id">
                     <div>
-                        <TaskCard :title="item.title" />
+                        <TaskCard :title="item.title" :is_-completed="item.is_completed"/>
                     </div>
                 </NuxtLink>
             </div>
