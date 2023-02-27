@@ -41,12 +41,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <div>
-                        <p class="SuccessMessage">
-                            The task has been updated Successfully
-                        </p>
-                    </div>
                     <div class="Task__Actions">
                         <button @click="updateTask">Update task</button>
                     </div>
