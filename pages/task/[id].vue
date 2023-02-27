@@ -42,7 +42,7 @@
                         </div>
                     </div>
                     <div class="Task__Actions">
-                        <button @click="updateTask">Detele task</button>
+                        <button @click="deleteTask">Detele task</button>
                         <button @click="updateTask">Update task</button>
                     </div>
                 </div>
